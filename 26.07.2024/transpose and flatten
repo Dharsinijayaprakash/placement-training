@@ -1,0 +1,11 @@
+import numpy as np
+u= input().strip().split(' ')
+v = list(map(int,u))
+w= []
+for i in range(v[0]):
+    x = input().strip().split(' ')
+    y = list(map(int,x))
+    w.append(y)
+result = np.array(w).reshape(v[0],v[1])
+print (result.T)
+print (result.flatten())
