@@ -1,0 +1,11 @@
+u=int(input("Enter number of elements for dictionary:"))
+k=[]
+v=[]
+for i in range(0,u):
+    w=int(input("Enter element" + str(i+1) + ":"))
+    k.append(w)
+for j in range(0,u):
+    element=int(input("Enter element" + str(j+1) + ":"))
+    v.append(w)
+x=dict(zip(k,v))
+print("The dictionary is:",x)
