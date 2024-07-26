@@ -1,0 +1,10 @@
+u = input("Enter file name: \n")
+v = 0
+with open(u, 'r') as file:
+    for line in f:
+        words = line.split()
+        for i in words:
+            for l in i:
+                if(l.isspace):
+                    v+=1
+print("blank spaces:",v)
