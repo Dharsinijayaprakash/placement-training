@@ -1,0 +1,37 @@
+class check_value():
+    def __init__(see):
+        see.u=[]
+    def add(see,x):
+        return see.u.append(x)
+    def remove(see,y):
+        see.u.remove(y)
+    def dis(see):
+        return (see.u)
+ 
+obj=check_value()
+ 
+c=1
+while c!=0:
+    print("0. Exit")
+    print("1. Add")
+    print("2. Delete")
+    print("3. Display")
+    c=int(input("Enter your choice: "))
+    if c==1:
+        u=int(input("Enter no to append: "))
+        obj.add(u)
+        print("List: ",obj.dis())
+ 
+    elif c==2:
+        u=int(input("Enter no to remove: "))
+        obj.remove(u)
+        print("List: ",obj.dis())
+ 
+    elif c==3:
+        print("List: ",obj.dis())
+    elif c==0:
+        print("Exiting!")
+    else:
+        print("Invalid choice!!")
+ 
+print()
