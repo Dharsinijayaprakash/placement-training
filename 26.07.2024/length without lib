@@ -1,0 +1,5 @@
+u=input("Enter string:")
+c=0
+for i in u:
+      c+=1
+print("Length of the string is:",c)
