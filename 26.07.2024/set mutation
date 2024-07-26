@@ -1,0 +1,15 @@
+u = int(input())
+v = set(map(int,input().strip().split()))
+w= int(input())
+for i in range(w):
+    o = input().strip().split()
+    x = set(map(int,input().strip().split()))
+    if o== 'update':
+        v.update(x)
+    elif o == 'intersection_update':
+        v.intersection_update(x)
+    elif o == 'difference_update':
+        v.difference_update(x)
+    elif o == 'symmetric_difference_update':
+        v.symmetric_difference_update(x)
+print (sum(v))
