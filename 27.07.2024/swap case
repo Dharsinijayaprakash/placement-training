@@ -1,0 +1,4 @@
+def s(u):
+    v=u.swapcase()
+    print("The swaped case is",v)
+u=input("Enter the string:",s(u))
