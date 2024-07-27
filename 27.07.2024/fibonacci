@@ -1,0 +1,11 @@
+def fib(u):
+	if u < 0:
+		print("Incorrect input")
+	elif u == 0:
+		return 0
+	elif u == 1 or u == 2:
+		return 1
+  else:
+		return fib(u-1) + fib(u-2)
+u=int(input("Enter the number:"))
+fib(u)
