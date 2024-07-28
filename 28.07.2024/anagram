@@ -1,0 +1,9 @@
+def anagrams(u,v):
+    return sorted(u) == sorted(v)
+
+u = input("Enter the first string: ")
+v = input("Enter the second string: ")
+if anagrams(u,v):
+    print(f"{u} and {v} are anagrams.")
+else:
+    print(f"{u} and {v} are not anagrams.")
