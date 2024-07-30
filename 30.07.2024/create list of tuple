@@ -1,0 +1,9 @@
+u=int(input("Enter the number: "))
+v=[]
+for i in range(u):
+    w=int(input())
+    v.append(w)
+x=[]
+for i in v:
+    x.append((i,i**2))
+print(x)
